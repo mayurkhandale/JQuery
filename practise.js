@@ -324,4 +324,4 @@ function capitalize(str){
 
 }
 
-console.log(capitalize('This is javascript code'),'444')
+console.log(capitalize('This is javascript code Practise'),'444')
