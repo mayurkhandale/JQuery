@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "mayur",
+      "desgn":"Front End Dev",
+      "flag" :true
+    },
+    {
+      "id": 2,
+      "name": "vijay",
+      "desgn":"Front End Dev",
+      "flag" :true
+    },
+    {
+      "id": 3,
+      "name": "arjun",
+      "desgn":"Business Analysis",
+      "flag" :true
+    },
+    {
+      "id": 4,
+      "name": "aneesh",
+      "desgn":"Ui Developer",
+      "flag" :true
+
+    },{
+      "id":5,
+      "name":"Raju",
+      "desgn":"Ui Developer",
+      "flag":false
+    }
+  ]
