@@ -1,5 +1,4 @@
 console.log("hiii");
-
 // 1 to 10  count
 let count = ''
 for (let i = 1; i <= 10; i++) {
@@ -8,7 +7,6 @@ for (let i = 1; i <= 10; i++) {
 
 }
 document.getElementById('counter').innerHTML = count
-
 
 // display Array list into ui
 let list = ["Apple", "Banana", "Mango", "Gauava", "Orange"];
@@ -27,7 +25,7 @@ function removeDublicate(param) {
 }
 removeDublicate(names)
 
-// remove dublicate method without using predefine method
+// remove dublicate method without using predefine method are written 
 let store = []
 function removePure(param) {
    names.forEach(items => {
@@ -208,8 +206,7 @@ const [first, ...rest] = restNumber
 console.log(first, 'first');
 console.log(rest, 'rest')
 
-// write a function pass string as a parameter and return alternate casing string 
-//  example :- 'HeLLo'  --> hEllO
+
 function alternateCasing(casing) {
    let text = '';
    for (let i = 0; i < casing.length; i++) {
@@ -314,7 +311,7 @@ function capitalize(str) {
       str[i] = str[i][0].toUpperCase() + str[i].substr(1);
    }
    return str.join(' ');
-
+ 
 }
 
 console.log(capitalize('This is javascript code Practise'), '444')
@@ -338,21 +335,31 @@ function checkBothArray(arr1, arr2) {
 checkBothArray([2, 3, 4, 5], [9, 4, 5, 2]);
 
 // flat a array without using flat method
-function flattenArray(para){
-   let flatter=[];
-    para.forEach(items=>{
-      if(Array.isArray(items)){
-          flatter=flatter.concat(flattenArray(items))
-      }else{
+function flattenArray(para) {
+   let flatter = [];
+   para.forEach(items => {
+      if (Array.isArray(items)) {
+         flatter = flatter.concat(flattenArray(items))
+      } else {
          flatter.push(items)
 
       }
-    })
-  return flatter
-}
-console.log(flattenArray([1,2,[5,6,7,[6,9,8,[0,5,[6,7,8]]]]]),'44::')
-let ss=navigator.userAgent
-console.log(ss,'356::')
-// 
+   })
 
- 
+   return flatter
+}
+console.log(flattenArray([1, 2, [5, 6, 7, [6, 9, 8, [0, 5, [6, 7, 8]]]]]), '44::')
+let ss = navigator.userAgent
+console.log(ss, 'this is last line of the file');
+
+function name() {
+   console.log(1);
+    setTimeout(()=>{
+        console.log('3')
+    },1000)
+     setTimeout(()=>{
+         console.log(2)
+     },0)
+   console.log(4)
+ }
+ name()
