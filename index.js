@@ -10,17 +10,17 @@ $(document).ready(function () {
         store = result;
       },
     });
-  
+
   }
   var empID = $('#empId').val();
   var empName = $('#empName').val();
   var empDesg = $('#empDesg').val();
-  if(empID && empName && empDesg){
-    
-  }else{
-    $('.submit-btn').attr("disabled",true)
+  if (empID && empName && empDesg) {
+
+  } else {
+    $('.submit-btn').attr("disabled", true)
   }
-  console.log(empID,empName,empDesg,'17::')
+  console.log(empID, empName, empDesg, '17::')
   async function getData() {
     $("#overlay").fadeIn(300);
     try {
